@@ -62,8 +62,8 @@ Antes de rodar o projeto, certifique-se de ter instalado:
 1. Clone o repositório:
 
 ```bash
-git clone <url-do-repositorio>
-cd raizsabee
+git clone https://github.com/DreDev3/raizsaber
+cd raizsaber
 ```
 
 2. Instale as dependências:
