@@ -2,6 +2,7 @@ import { Button } from '@/components/ui/button';
 import { Tooltip } from '@/components/ui/tooltip';
 import { CreateCourseFormData } from '@/server/schemas/course';
 import { GripVertical, Pen, Trash } from 'lucide-react';
+import { type CSSProperties } from 'react';
 import { useFieldArray, useFormContext } from 'react-hook-form';
 import { LessonFormItem } from './manage-lesson-dialog';
 import { AlertDialog } from '@/components/ui/alert-dialog';
@@ -58,6 +59,7 @@ export const LessonsList = ({ moduleIndex, onEditLesson }: LessonsListProps) => 
                     <div
                       {...provided.draggableProps}
                       ref={provided.innerRef}
+                      style={provided.draggableProps.style as CSSProperties | undefined}
                       className='w-full grid grid-cols-[30px_1fr] items-center bg-card/50 rounded-md overflow-hidden border border-input'
                     >
                       <div

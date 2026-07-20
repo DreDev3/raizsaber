@@ -1,7 +1,7 @@
 import { Button } from '@/components/ui/button';
 import { CreateCourseFormData } from '@/server/schemas/course';
 import { GripVertical, Pen, Plus, Trash } from 'lucide-react';
-import { useState } from 'react';
+import { useState, type CSSProperties } from 'react';
 import { useFieldArray, useFormContext } from 'react-hook-form';
 import { ManageModuleDialog, ModuleFormItem } from './manage-module-dialog';
 import { Tooltip } from '@/components/ui/tooltip/index';
@@ -71,6 +71,7 @@ export const ModulesList = () => {
                       <div
                         {...provided.draggableProps}
                         ref={provided.innerRef}
+                        style={provided.draggableProps.style as CSSProperties | undefined}
                         className='w-full grid grid-cols-[40px_1fr] items-center bg-muted/50 rounded-md overflow-hidden border border-input'
                       >
                         <div
