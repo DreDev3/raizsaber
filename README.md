@@ -62,7 +62,7 @@ Antes de rodar o projeto, certifique-se de ter instalado:
 1. Clone o repositório:
 
 ```bash
-git clone [<url-do-repositorio>](https://github.com/DreDev3/raizsaber)
+git clone https://github.com/DreDev3/raizsaber
 cd raizsaber
 ```
 
