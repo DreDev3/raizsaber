@@ -19,8 +19,8 @@ const nunito = Nunito({
 
 export const metadata: Metadata = {
   title: {
-    template: '%s | CodeLab',
-    default: 'CodeLab'
+    template: '%s | RAIZSABER',
+    default: 'RAIZSABER'
   },
   icons: {
     icon: '/favicon.svg'

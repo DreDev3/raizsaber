@@ -14,8 +14,8 @@ type EmptyUser = {
   userId: null;
 }
 
-export function getUser(throwError?: true): Promise<FilledUser>;
-export function getUser(throwError: false): Promise<FilledUser | EmptyUser>;
+export async function getUser(throwError?: true): Promise<FilledUser>;
+export async function getUser(throwError: false): Promise<FilledUser | EmptyUser>;
 
 export async function getUser (throwError = true): Promise<FilledUser | EmptyUser> {
     const {userId} = await auth();
